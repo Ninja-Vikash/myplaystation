@@ -1,0 +1,711 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+}
+/* --------------------------------------------SONY LOGO */
+.brand {
+  padding: 14px 12px;
+  width: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.brand img {
+  width: 80px;
+}
+/* -------------------------------------------NAVBAR */
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #fff;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+}
+
+nav img:first-child {
+  height: 55px;
+  margin-right: 10px;
+}
+
+nav .nav-items {
+  display: flex;
+  gap: 5px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+nav a:hover,
+nav a:hover i {
+  color: #0070d1;
+}
+
+nav a i {
+  color: #aaa;
+  font-size: 18px;
+}
+
+nav button {
+  padding: 2px 18px;
+  position: absolute;
+  right: 60px;
+  background: #0070d1;
+  color: #fff;
+  border-radius: 20px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav img:last-child {
+  width: 24px;
+  position: absolute;
+  right: 10px;
+}
+
+/* --------------------------------------------------------------LANDING PAGE */
+.landing-page {
+  height: 78vh;
+  background-image: url(assets/img/img1.webp);
+  background-size: cover;
+  background-position: center center;
+  padding: 60px 130px;
+  cursor: pointer;
+}
+
+.landing-page-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  color: white;
+}
+
+.landing-page-content img {
+  width: 450px;
+}
+
+.landing-page-content h1 {
+  font-weight: 300;
+  font-size: 46px;
+  padding: 15px 0px;
+}
+
+.landing-page-content p {
+  max-width: 44%;
+}
+
+.landing-page-content button {
+  margin: 36px 2px;
+  padding: 10px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+  background: white;
+  border-radius: 40px;
+  border: none;
+}
+
+.landing-page-content button:hover {
+  outline: 2px solid white;
+  background-color: rgb(228, 228, 228);
+  outline-offset: 3px;
+}
+
+/* -------------------------------------------------------LANDING OPTION */
+
+.hero-images {
+  padding: 50px 0px;
+  margin: auto;
+  width: 86vw;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.option {
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.option img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  opacity: 0.7;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s 0s;
+}
+
+.option img:hover {
+  opacity: 1;
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 0px #fff, 0px 0px 0px #000, 0px 15px 10px #0003,
+    0px 0px 0px #000;
+}
+
+/* ---------------------------------------------------------------------PURCHASE */
+
+.ps-acces {
+  height: 80vh;
+  max-width: 84vw;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+}
+
+.product-detail {
+  max-width: 34%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product-detail h2 {
+  font-size: 53px;
+  line-height: 61px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.product-detail h4 {
+  color: #0068bd;
+  font-size: 25px;
+  font-weight: 300;
+  line-height: 31px;
+  padding: 10px 0px;
+}
+
+.product-detail p {
+  font-size: 14px;
+  line-height: 21px;
+  color: #6b6b6b;
+  font-weight: 400;
+}
+
+.buttons {
+  margin: 24px 0px;
+}
+
+.buttons button {
+  padding: 12px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons button:nth-child(1) {
+  background: #0070d1;
+}
+
+.buttons button:nth-child(1):hover {
+  outline: 2px solid #0070d1;
+  outline-offset: 3px;
+}
+
+.side-image {
+  width: 69%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.side-image img {
+  width: 700px;
+}
+
+/* -------------------------------------------------------------------PURCHASE ITEM */
+.purchase-items {
+  margin-inline: auto;
+  margin-block: 30px;
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.purchase-items .items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.purchase-items .items .item-img {
+  margin-block-end: 20px;
+  padding: 10px 20px;
+  box-shadow: 0px 10px 14px 0px #8080806b;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.purchase-items .items .item-img:hover {
+  box-shadow: 0px 10px 30px 0px #7474746b;
+  transform: scale(1.03);
+}
+
+.purchase-items .items img {
+  width: 160px;
+}
+
+.purchase-items .items p {
+  text-align: center;
+  width: 80%;
+  font-size: 14px;
+}
+
+/* =====================================================UPCOMING */
+
+.upcoming {
+  width: 100%;
+  background: #121314;
+  padding: 50px 80px;
+}
+
+.upcoming > h2 {
+  font-size: 38px;
+  font-weight: 290;
+  color: #fff;
+  width: 100%;
+}
+
+.joint-btn-area {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.joint-btn-area span {
+  width: 250px;
+  border-radius: 50px;
+  background: #212226;
+  display: flex;
+}
+
+.joint-btn-area span button {
+  height: 100%;
+  width: 50%;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+}
+
+.joint-btn-area span button:last-child {
+  color: #fff;
+  background: #212226;
+}
+
+.card-container {
+  padding: 60px 0px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 15px;
+}
+
+@media screen and (min-width: 1600px) {
+  .card-container {
+    max-width: 1550px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .card-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: all ease 0.3s;
+  cursor: pointer;
+  position: relative;
+  transition: all ease 0.3s;
+}
+
+.card-img img:nth-child(1) {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-img img:nth-child(2) {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  z-index: 9;
+  height: 22px;
+}
+
+.card-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 13px 30px #000;
+}
+
+.card h4 {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  white-space: unset;
+}
+
+.shadow {
+  /* background: #00000075; */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.shadow:hover {
+  background: transparent;
+}
+
+/* ----------------------------------- PS PLUS */
+.ps-plus {
+  padding-block-start: 80px;
+  height: 120vh;
+  width: 100%;
+  background-image: url(assets/img/ps-plus/playstationplus_banner.webp);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.ps-plus-logo {
+  display: grid;
+  place-items: center;
+}
+
+.ps-plus-logo img {
+  width: 270px;
+}
+
+.ps-details {
+  text-align: center;
+}
+
+.ps-details h2 {
+  font-size: 39px;
+  font-weight: 300;
+}
+
+.ps-details p {
+  margin: 16px 0px;
+  color: #6b6b6b;
+}
+
+.ps-plus-slider-area {
+  height: 52vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+.ps-plus-slider-area .slide {
+  height: 46vh;
+  width: 60vw;
+  background-image: url(assets/img/ps-plus/02.webp);
+  background-position: center center;
+  background-size: cover;
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.slide-left {
+  height: 46vh;
+  width: 30vw;
+  border-radius: 16px;
+  right: 100px;
+  background-image: url(assets/img/ps-plus/01.webp);
+  background-position: right;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.slide-left .slide-shadow2 {
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.355);
+}
+
+.slide-right {
+  height: 46vh;
+  width: 30vw;
+  border-radius: 16px;
+  left: 100px;
+  background-image: url(assets/img/ps-plus/03.webp);
+  background-position: left;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.slide-right .slide-shadow3 {
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  background-color: black;
+}
+
+.ps-plus-slider-area .slide:hover,
+.slide-left:hover,
+.slide-right:hover {
+  box-shadow: 0px 1px 10px grey;
+}
+
+.slide-shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 16px;
+  background: linear-gradient(to right, #000000e0 5%, #0003);
+}
+
+.slide-insider {
+  height: 100%;
+  width: 60%;
+  padding: 60px 36px;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.slide-insider .sticker img {
+  height: 54px;
+  margin-block-end: 20px;
+}
+
+.slide-insider h3 {
+  font-size: 25px;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 10px 0px;
+}
+
+.slide-insider p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.ps-btn {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 70px;
+}
+
+.ps-btn button {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: #0070d1;
+  border-radius: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.ps-btn button:hover {
+  outline: 2px solid #0070d1;
+  outline-offset: 3px;
+}
+
+/* ------------------------------------ FEATURE  */
+.feature {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#ffffff00, #26254f 64%);
+}
+
+.feature-text {
+  padding: 55px 85px;
+  height: 67vh;
+  width: 100%;
+  background-image: url(assets/img/feature/feature-bg.webp);
+  background-position: top;
+  background-size: cover;
+  position: relative;
+}
+
+.z-10 {
+  position: relative;
+  z-index: 10;
+}
+
+.feature-text .heading-wrapper {
+  margin-block-end: 24px;
+}
+
+.feature-text .heading-wrapper h2 {
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.4;
+}
+
+.feature-text .heading-wrapper :nth-child(1) {
+  font-weight: 300;
+}
+.feature-text .heading-wrapper :nth-child(2) {
+  font-weight: 600;
+}
+
+.feature-text p {
+  width: 45%;
+  color: #ddd;
+  font-size: 18px;
+}
+
+.feature-btn {
+  margin-block-start: 40px;
+}
+
+.feature-btn button {
+  padding: 8px 12px;
+  border-radius: 30px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.feature-btn button:hover{
+  background-color: #bbb;
+  outline-offset: 3px;
+  outline: 2px solid #bbb ;
+}
+
+.feature-card-area {
+  bottom: 100px;
+  max-width: 90vw;
+  height: 32vh;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.feature-card-area .feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature-card-area .feature-card .fc-img {
+  width: 80%;
+  border-radius: 10px;
+}
+
+.fc-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0px 6px 10px 1px black;
+  cursor: pointer;
+}
+
+.feature-card-area .feature-card .fc-img img:hover {
+  box-shadow: 0px 5px 10px 2px black;
+  transform: scale(1.01);
+}
+
+.feature-card-area .feature-card p {
+  width: 89%;
+  margin-top: 20px;
+  margin-inline: auto;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+/* ------------------------------------SOCIAL HANDLE */
+.social-handles {
+  padding: 60px;
+  height: 54vh;
+  background: #f5f7fa;
+}
+
+.social-handles h3 {
+  margin-block-end: 50px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 31px;
+  color: #444;
+}
+
+.social-media {
+  max-width: 40vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social-media img {
+  width: 120px;
+}
