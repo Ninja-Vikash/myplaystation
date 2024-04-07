@@ -1,8 +1,22 @@
+@font-face {
+  font-family: sst-normal;
+  src: url("./assets/fonts/SST-Medium-latin.woff2");
+}
+
+@font-face {
+  font-family: sst-thin;
+  src: url("./assets/fonts/SST-Light-latin.woff2");
+}
+
+@font-face {
+  font-family: sst-bold;
+  src: url("./assets/fonts/SST-Bold-latin.woff2");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins;
 }
 
 html,
@@ -12,9 +26,9 @@ body {
   height: 100%;
 }
 
-.container {
+/* .container {
   width: 100%;
-}
+} */
 /* --------------------------------------------SONY LOGO */
 .brand {
   padding: 14px 12px;
@@ -54,7 +68,7 @@ nav a {
   text-decoration: none;
   color: #000;
   font-size: 14px;
-  font-weight: 500;
+  font-family: sst-normal;
   display: flex;
   align-items: center;
 }
@@ -91,7 +105,7 @@ nav img:last-child {
 /* --------------------------------------------------------------LANDING PAGE */
 .landing-page {
   height: 78vh;
-  background-image: url(assets/img/img1.webp);
+  background-image: url(assets/img/heroImage.webp);
   background-size: cover;
   background-position: center center;
   padding: 60px 130px;
@@ -115,12 +129,14 @@ nav img:last-child {
 
 .landing-page-content h1 {
   font-weight: 300;
+  font-family: sst-normal;
   font-size: 46px;
   padding: 15px 0px;
 }
 
 .landing-page-content p {
   max-width: 44%;
+  font-family: sst-thin;
 }
 
 .landing-page-content button {
@@ -145,10 +161,18 @@ nav img:last-child {
 .hero-images {
   padding: 50px 0px;
   margin: auto;
-  width: 86vw;
+  max-width: 86vw;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 10px;
+  transition: ease 0.3s;
+}
+
+@media screen and (min-width : 1800px) {
+  .hero-images {
+    max-width: 1600px;
+    gap: 30px;
+  }
 }
 
 .option {
@@ -181,6 +205,13 @@ nav img:last-child {
   margin: auto;
   display: flex;
   gap: 80px;
+  transition: ease 0.4s;
+}
+
+@media screen and (min-width : 1800px) {
+  .ps-acces {
+    max-width: 1600px;
+  }
 }
 
 .product-detail {
@@ -188,6 +219,7 @@ nav img:last-child {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: sst-thin;
 }
 
 .product-detail h2 {
@@ -255,6 +287,13 @@ nav img:last-child {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 10px;
+  transition: ease 0.3s;
+}
+
+@media screen and (min-width : 1800px) {
+  .purchase-items {
+    max-width: 1600px;
+  }
 }
 
 .purchase-items .items {
@@ -286,6 +325,8 @@ nav img:last-child {
   text-align: center;
   width: 80%;
   font-size: 14px;
+  font-family: sst-thin;
+  font-weight: 600;
 }
 
 /* =====================================================UPCOMING */
@@ -298,6 +339,7 @@ nav img:last-child {
 
 .upcoming > h2 {
   font-size: 38px;
+  font-family: sst-thin;
   font-weight: 290;
   color: #fff;
   width: 100%;
@@ -313,6 +355,7 @@ nav img:last-child {
 
 .joint-btn-area span {
   width: 250px;
+  font-family: sst-thin;
   border-radius: 50px;
   background: #212226;
   display: flex;
@@ -335,7 +378,7 @@ nav img:last-child {
   padding: 60px 0px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 15px;
+  gap: 30px
 }
 
 @media screen and (min-width: 1600px) {
@@ -348,6 +391,7 @@ nav img:last-child {
 @media screen and (max-width: 1500px) {
   .card-container {
     grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
   }
 }
 
@@ -389,6 +433,7 @@ nav img:last-child {
 }
 
 .card h4 {
+  font-family: sst-thin;
   font-weight: 400;
   font-size: 14px;
   color: #fff;
@@ -396,7 +441,6 @@ nav img:last-child {
 }
 
 .shadow {
-  /* background: #00000075; */
   height: 100%;
   width: 100%;
   position: absolute;
@@ -430,6 +474,7 @@ nav img:last-child {
 
 .ps-details {
   text-align: center;
+  font-family: sst-thin;
 }
 
 .ps-details h2 {
@@ -462,6 +507,12 @@ nav img:last-child {
   border-radius: 16px;
   position: relative;
   cursor: pointer;
+}
+
+@media screen and (min-width : 1800px) {
+  .ps-plus-slider-area .slide {
+    max-width: 1200px;
+  }
 }
 
 .slide-left {
@@ -520,6 +571,7 @@ nav img:last-child {
   padding: 60px 36px;
   position: relative;
   z-index: 10;
+  font-family: sst-thin;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -539,6 +591,7 @@ nav img:last-child {
 
 .slide-insider p {
   font-size: 14px;
+  line-height: 1.3;
   color: #ffffff;
 }
 
@@ -586,9 +639,16 @@ nav img:last-child {
   height: 67vh;
   width: 100%;
   background-image: url(assets/img/feature/feature-bg.webp);
-  background-position: top;
+  background-position: top left;
   background-size: cover;
   position: relative;
+  transition: ease 0.3s;
+}
+
+@media screen and (min-width : 2000px) {
+  .feature-text {
+    background-position: top center;
+  }
 }
 
 .z-10 {
@@ -602,12 +662,14 @@ nav img:last-child {
 
 .feature-text .heading-wrapper h2 {
   font-size: 40px;
+  font-family: sst-bold;
   color: #fff;
   line-height: 1.4;
 }
 
 .feature-text .heading-wrapper :nth-child(1) {
   font-weight: 300;
+  font-family: sst-thin;
 }
 .feature-text .heading-wrapper :nth-child(2) {
   font-weight: 600;
@@ -617,6 +679,8 @@ nav img:last-child {
   width: 45%;
   color: #ddd;
   font-size: 18px;
+  font-family: sst-normal;
+  line-height: 1.2;
 }
 
 .feature-btn {
@@ -645,6 +709,12 @@ nav img:last-child {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+}
+
+@media screen and (min-width: 2000px) {
+  .feature-card-area {
+    max-width: 1800px;
+  }
 }
 
 .feature-card-area .feature-card {
@@ -679,6 +749,7 @@ nav img:last-child {
   margin-inline: auto;
   text-align: center;
   color: white;
+  font-family: sst-thin;
   font-size: 22px;
   font-weight: 300;
 }
@@ -693,6 +764,7 @@ nav img:last-child {
 .social-handles h3 {
   margin-block-end: 50px;
   text-align: center;
+  font-family: sst-thin;
   font-weight: 300;
   font-size: 31px;
   color: #444;
