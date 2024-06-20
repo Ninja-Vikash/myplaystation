@@ -1,15 +1,18 @@
 @font-face {
   font-family: sst-normal;
+  font-weight: 400;
   src: url("./assets/fonts/SST-Medium-latin.woff2");
 }
 
 @font-face {
   font-family: sst-thin;
+  font-weight: 300;
   src: url("./assets/fonts/SST-Light-latin.woff2");
 }
 
 @font-face {
   font-family: sst-bold;
+  font-weight: 700;
   src: url("./assets/fonts/SST-Bold-latin.woff2");
 }
 
@@ -26,9 +29,6 @@ body {
   height: 100%;
 }
 
-/* .container {
-  width: 100%;
-} */
 /* --------------------------------------------SONY LOGO */
 .brand {
   padding: 14px 12px;
@@ -99,43 +99,59 @@ nav button {
 nav img:last-child {
   width: 24px;
   position: absolute;
-  right: 10px;
+  right: 24px;
 }
 
 /* --------------------------------------------------------------LANDING PAGE */
 .landing-page {
-  height: 78vh;
+  width: 100%;
   background-image: url(assets/img/heroImage.webp);
   background-size: cover;
   background-position: center center;
-  padding: 60px 130px;
+  /* padding: 60px 130px; */
   cursor: pointer;
 }
 
 .landing-page-content {
-  position: relative;
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  left: 8rem;
   display: flex;
+  width: calc(100vw - 60%);
   flex-direction: column;
   align-items: start;
   justify-content: center;
   color: white;
 }
 
-.landing-page-content img {
-  width: 450px;
+.landing-page-content figure {
+  width: 80%;
+}
+.landing-page-content figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+.landing-page-content figure img.resize {
+  width: 320px;
+  height: 220px;
+  padding: 10px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
 }
 
 .landing-page-content h1 {
+  text-align: left;
+  font-family: sst-thin;
   font-weight: 300;
-  font-family: sst-normal;
   font-size: 46px;
   padding: 15px 0px;
 }
 
 .landing-page-content p {
-  max-width: 44%;
+  max-width: 100%;
+  line-height: 1.6rem;
+  text-align: left;
   font-family: sst-thin;
 }
 
@@ -156,28 +172,64 @@ nav img:last-child {
   outline-offset: 3px;
 }
 
+/* -------------------------------------------------------SWIPER JS */
+
+.landing-page .swiper-slide {
+  height: 78vh;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-page .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* -------------------------------------------------------LANDING OPTION */
 
-.hero-images {
+.hero-cards {
   padding: 50px 0px;
   margin: auto;
-  max-width: 86vw;
+  max-width: 84vw;
   display: grid;
+  height: 200px;
   grid-template-columns: repeat(7, 1fr);
-  gap: 10px;
   transition: ease 0.3s;
 }
 
-@media screen and (min-width : 1800px) {
-  .hero-images {
+@media screen and (min-width: 1800px) {
+  .hero-cards {
+    width: calc(100% - 16vw);
+  }
+}
+
+@media screen and (min-width: 1980px) {
+  .hero-cards {
     max-width: 1600px;
-    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .hero-cards {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .option:last-child {
+    display: none;
   }
 }
 
 .option {
+  padding: 10px;
   border-radius: 15px;
   cursor: pointer;
+  margin: 0;
+  transition: ease 0.3s;
 }
 
 .option img {
@@ -200,26 +252,47 @@ nav img:last-child {
 /* ---------------------------------------------------------------------PURCHASE */
 
 .ps-acces {
-  height: 80vh;
+  /* height: 50rem; */
   max-width: 84vw;
   margin: auto;
-  display: flex;
-  gap: 80px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 2fr 3fr;
+  /* gap: 80px; */
   transition: ease 0.4s;
 }
 
-@media screen and (min-width : 1800px) {
+@media screen and (min-width: 1800px) {
   .ps-acces {
     max-width: 1600px;
   }
 }
+@media screen and (max-width: 1700px) {
+  .ps-acces {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .ps-acces {
+    grid-template-rows: 70vh 40vh;
+    grid-template-columns: 1fr;
+  }
+}
 
 .product-detail {
-  max-width: 34%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   font-family: sst-thin;
+  transition: ease 300ms;
+}
+
+@media screen and (max-width: 1100px) {
+  .product-detail {
+    grid-column: 1;
+    grid-row: 2;
+  }
 }
 
 .product-detail h2 {
@@ -268,15 +341,53 @@ nav img:last-child {
 }
 
 .side-image {
-  width: 69%;
+  height: 70%;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  transition: ease 400ms;
+}
+
+@media screen and (max-width: 1800px) {
+  .side-image {
+    width: calc(100% - 10rem);
+    height: calc(100% - 10rem);
+  }
+}
+@media screen and (max-width: 1550px) {
+  .side-image {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .side-image {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .side-image img {
-  width: 700px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .side-image img {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .side-image img {
+    height: 70%;
+    width: 70%;
+    aspect-ratio: 1/1;
+  }
 }
 
 /* -------------------------------------------------------------------PURCHASE ITEM */
@@ -290,9 +401,16 @@ nav img:last-child {
   transition: ease 0.3s;
 }
 
-@media screen and (min-width : 1800px) {
+@media screen and (min-width: 1800px) {
   .purchase-items {
     max-width: 1600px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .purchase-items {
+    max-width: calc(100% - 16vw);
+    grid-template-columns: repeat(5, 1fr);
   }
 }
 
@@ -302,6 +420,12 @@ nav img:last-child {
   align-items: center;
   border-radius: 10px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+  .purchase-items .items:last-child {
+    display: none;
+  }
 }
 
 .purchase-items .items .item-img {
@@ -318,7 +442,7 @@ nav img:last-child {
 }
 
 .purchase-items .items img {
-  width: 160px;
+  width: 100%;
 }
 
 .purchase-items .items p {
@@ -378,7 +502,7 @@ nav img:last-child {
   padding: 60px 0px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 30px
+  gap: 30px;
 }
 
 @media screen and (min-width: 1600px) {
@@ -509,7 +633,7 @@ nav img:last-child {
   cursor: pointer;
 }
 
-@media screen and (min-width : 1800px) {
+@media screen and (min-width: 1800px) {
   .ps-plus-slider-area .slide {
     max-width: 1200px;
   }
@@ -645,7 +769,7 @@ nav img:last-child {
   transition: ease 0.3s;
 }
 
-@media screen and (min-width : 2000px) {
+@media screen and (min-width: 2000px) {
   .feature-text {
     background-position: top center;
   }
@@ -695,10 +819,10 @@ nav img:last-child {
   font-size: 16px;
 }
 
-.feature-btn button:hover{
+.feature-btn button:hover {
   background-color: #bbb;
   outline-offset: 3px;
-  outline: 2px solid #bbb ;
+  outline: 2px solid #bbb;
 }
 
 .feature-card-area {

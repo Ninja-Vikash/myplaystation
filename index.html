@@ -3,10 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PlayStation® Official Site: Consoles, Games, Accessories & More</title>
-    <link rel="shortcut icon" href="favicon.io.webp" type="image/x-icon">
+    <title>
+      PlayStation® Official Site: Consoles, Games, Accessories & More
+    </title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
     <!-- ------------------ LOCO ----------------- -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css"
+    />
+
     <!-- -------------------ICONS----------------- -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -16,17 +23,24 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
-    <!-- -------------------ICONS----------------- -->
+
+    <!----------------- Link Swiper's CSS ----------->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div class="container">
-      <div class="brand">
-        <img src="assets/img/sony_logo.svg"/>
-      </div>
+      <figure class="brand">
+        <img src="assets/img/sony_logo.svg" />
+      </figure>
 
       <nav>
-        <img src="assets/img/playstation.svg"/>
+        <img src="assets/img/playstation.svg" />
 
         <div class="nav-items">
           <a href="">Games<i class="bx bxs-chevron-down"></i></a>
@@ -40,45 +54,154 @@
         </div>
 
         <button>Sign In</button>
-        <img src="assets/img/search.svg" alt="">
+        <img src="assets/img/search.svg" alt="" />
       </nav>
 
-      <section class="landing-page">
-        <div class="landing-page-content">
-          <img src="assets/img/heroText.webp" alt="">
+      <!-- ------------ Landing page Sliders --------------- -->
+      <section class="landing-page swiper hero">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="assets/img/hero/hero-images/horizon-adventures.webp"
+              alt=""
+            />
+            <div class="landing-page-content">
+              <figure>
+                <img
+                  src="assets/img/hero/hero-logo/horizon-adventures.webp"
+                  alt="Lego Horizon Adventures"
+                />
+              </figure>
 
-          <h1>Fist meets fate</h1>
+              <h1>Some heroes are built different</h1>
 
-          <p>The Mishima saga continues. Experience the epic new story featuring dozens of extraordinary fighters, out now on PS5.</p>
+              <p>
+                Join machine hunter Aloy as she leads a colourful crew of heroes
+                on a quest to save the world, coming soon to PS5, PC & Nintendo
+                Switch
+              </p>
 
-          <button>Find out more</button>
+              <button>Find out more</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/img/hero/hero-images/astro-bot.webp" alt="" />
+            <div class="landing-page-content">
+              <figure>
+                <img
+                  src="assets/img/hero/hero-logo/Astro-Bot.webp"
+                  class="resize"
+                  alt="Astro Bot"
+                />
+              </figure>
+
+              <h1>ASTRO is back!</h1>
+
+              <p>
+                Charge into a brand-new, supersized adventure with ASTRO across
+                50 exciting and diverse worlds.
+              </p>
+
+              <button>Find out more</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="assets/img/hero/hero-images/V-Rising-Launch.webp"
+              alt=""
+            />
+            <div class="landing-page-content">
+              <figure>
+                <img
+                  src="assets/img/hero/hero-logo/V-Rising.webp"
+                  alt="V Rising"
+                />
+              </figure>
+
+              <h1>Unleash Your inner vampire</h1>
+
+              <p>
+                Survive sunlight, build your castle, explore a Gothic open world
+                and rule the night, in this new action RPG out now on PS5
+              </p>
+
+              <button>Find out more</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/img/hero/hero-images/Concord-hero.webp" alt="" />
+            <div class="landing-page-content">
+              <figure>
+                <img
+                  src="assets/img/hero/hero-logo/concord-dark.webp"
+                  alt="concord"
+                />
+              </figure>
+
+              <h1>Join the crew of the Northstar</h1>
+
+              <p>
+                Assemble your crew of Freegunner space outlaws and team up with
+                friends online, in this new multiplayer shooter available August
+                23rd on PS5 and PC.¹
+              </p>
+
+              <button>Find out more</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img src="assets/img/hero/hero-images/FC24-EURO24.webp" alt="" />
+            <div class="landing-page-content">
+              <figure>
+                <img src="assets/img/hero/hero-logo/FC24-logo.webp" alt="" />
+              </figure>
+
+              <h1>Lead your nation to glory</h1>
+
+              <p>
+                Live the thrill of the authentic UEFA EURO 2024™ experience as
+                the full tournament is now available at no extra cost.*
+              </p>
+
+              <button>Find out more</button>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <img
+              src="assets/img/hero/hero-images/shin-megami-tensei-v-vengeance.webp"
+              alt=""
+            />
+            <div class="landing-page-content">
+              <figure>
+                <img
+                  src="assets/img/hero/hero-logo/shin-megami-tensei.webp"
+                  alt="Shin Megami Tensei V Vengance"
+                />
+              </figure>
+
+              <h1>Revenge awaits</h1>
+
+              <p>
+                Become a demigod and forge your own path to dictate the fate of
+                existence in the definitive version of the hit RPG, out now on
+                PS5 & PS4
+              </p>
+
+              <button>Find out more</button>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="hero-images">
-        <div class="option">
-          <img src="assets/img/nav-images/nav_img1.webp" alt="" />
-        </div>
-        <div class="option">
-          <img src="assets/img/nav-images/nav_img2.webp" alt="" />
-        </div>
-        <div class="option">
-          <img src="assets/img/nav-images/nav_img3.webp" alt="" />
-        </div>
-        <div class="option">
-          <img src="assets/img/nav-images/nav_img4.webp" alt="" />
-        </div>
-        <div class="option">
-          <img src="assets/img/nav-images/nav_img5.webp" alt="" />
-        </div>
-        <div class="option">
-          <img src="assets/img/nav-images/nav_img6.webp" alt="" />
-        </div>
-        <div class="option">
-          <img src="assets/img/nav-images/nav_img7.webp" alt="" />
-        </div>
-      </section>
+      <!-- ------------ Landing page cards -------------- -->
+      <section id="heroCards"></section>
 
+      <!-- ------------ Controller for PS --------------- -->
       <section class="ps-acces">
         <div class="product-detail">
           <h2>Introducing the PS5 console and accessories</h2>
@@ -97,73 +220,10 @@
         </div>
       </section>
 
-      <section class="purchase-items">
-        <div class="items">
-          <div class="item-img">
-            <img src="assets/img/purchaseItemList/01.webp">
-          </div>
-          <p>PS5 Console</p>
-        </div>
-        <div class="items">
-          <div class="item-img">
-            <img src="assets/img/purchaseItemList/02.webp">
-          </div>
-          <p>DualSense™ Wireless Controller</p>
-        </div>
-        <div class="items">
-          <div class="item-img">
-            <img src="assets/img/purchaseItemList/03.webp">
-          </div>
-          <p>PULSE Elite™ Wireless Headset</p>
-        </div>
-        <div class="items">
-          <div class="item-img">
-            <img src="assets/img/purchaseItemList/04.webp">
-          </div>
-          <p>PULSE Explore™ Wireless Earbuds</p>
-        </div>
-        <div class="items">
-          <div class="item-img">
-            <img src="assets/img/purchaseItemList/05.webp">
-          </div>
-          <p>DualSense Edge</p>
-        </div>
-        <div class="items">
-          <div class="item-img">
-            <img src="assets/img/purchaseItemList/06.webp">
-          </div>
-          <p>Access™ Controller</p>
-        </div>
-        <!-- <div class="p-item">
-          <img src="images/item1.webp" alt="" />
-          <span>PS5 Console</span>
-        </div>
-        <div class="p-item">
-          <img src="images/item2.webp" alt="" />
-          <span>DualSense<sup>TM</sup> Wireless Controller</span>
-        </div>
-        <div class="p-item">
-          <img src="images/item3.webp" alt="" />
-          <span>PULSE 3D<sup>TM</sup> Wireless Headset</span>
-        </div>
-        <div class="p-item">
-          <img src="images/item4.webp" alt="" />
-          <span>DualSense Edge</span>
-        </div>
-        <div class="p-item">
-          <img src="images/item5.webp" alt="" />
-          <span>Media Remote</span>
-        </div>
-        <div class="p-item">
-          <img src="images/item6.webp" alt="" />
-          <span>HD Camera</span>
-        </div>
-        <div class="p-item">
-          <img src="images/item7.webp" alt="" />
-          <span>PS5 Console Covers</span>
-        </div> -->
-      </section>
+      <!-- -------------- PurChase Items ----------------- -->
+      <section id="itemCard"></section>
 
+      <!-- -------------- Upcomings --------------- -->
       <section class="upcoming">
         <h2>Great PS4 & PS5 games out now or coming soon</h2>
         <div class="joint-btn-area">
@@ -172,126 +232,22 @@
             <button class="btn-2">Coming soon</button>
           </span>
         </div>
-        <div class="card-container">
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img1.webp" alt="">
-              <img src="assets/img/upcoming/ps4.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>Hogwarts Legacy</h4>
-          </div>
-          
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img2.webp" alt="">
-              <img src="assets/img/upcoming/ps5.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>Marvel's Spider-Man 2</h4>
-          </div>
 
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img3.webp" alt="">
-              <img src="assets/img/upcoming/ps5.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>Tekken 8</h4>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img4.webp" alt="">
-              <img src="assets/img/upcoming/ps4.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>EA SPORTS™ FC 24 IV</h4>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img5.webp" alt="">
-              <img src="assets/img/upcoming/ps5.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>Suicide Squad: Kill the Just..</h4>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img6.webp" alt="">
-              <img src="assets/img/upcoming/ps4.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>Prince of Persia The Lost Cr..</h4>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img7.webp" alt="">
-              <img src="assets/img/upcoming/ps4.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>God of War Ragnarök</h4>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img8.webp" alt="">
-              <img src="assets/img/upcoming/ps5.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>The Last of Us™ Part I</h4>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img9.webp" alt="">
-              <img src="assets/img/upcoming/ps5.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>Alan Wake 2</h4>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img10.webp" alt="">
-              <img src="assets/img/upcoming/ps5.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>Final Fantasy XVI</h4>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img11.webp" alt="">
-              <img src="assets/img/upcoming/ps4.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>Call of Duty: Modern Warfare</h4>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-              <img src="assets/img/upcoming/img12.webp" alt="">
-              <img src="assets/img/upcoming/ps4.svg" alt="">
-              <div class="shadow"></div>
-            </div>
-            <h4>LEGO Fortnite</h4>  
-          </div>
-
+        <div id="upcomingCards"></div>
       </section>
 
       <section class="ps-plus">
         <div class="ps-plus-logo">
-          <img src="assets/img/ps-plus/ps-plus-logo.svg" alt="">
+          <img src="assets/img/ps-plus/ps-plus-logo.svg" alt="" />
         </div>
 
         <div class="ps-details">
           <h2>Discover PlayStation Plus</h2>
 
-          <p>Play hundreds of incredible PS5, PS4 and classic PlayStation games, and discover epic adventures, unique indies, family favourites, and everything in between.
+          <p>
+            Play hundreds of incredible PS5, PS4 and classic PlayStation games,
+            and discover epic adventures, unique indies, family favourites, and
+            everything in between.
           </p>
         </div>
 
@@ -306,21 +262,27 @@
 
             <div class="slide-insider">
               <div class="sticker">
-                <img src="assets/img/ps-plus/sticker.webp" alt="">
+                <img src="assets/img/ps-plus/sticker.webp" alt="" />
               </div>
               <h3>PlayStation Plus Season of Play</h3>
-              <p>Join us for a full month of new PlayStation Plus content, a competition, discounts and more activities</p>
+              <p>
+                Join us for a full month of new PlayStation Plus content, a
+                competition, discounts and more activities
+              </p>
             </div>
           </div>
 
           <div class="slide-right">
-            <div class="slide-shadow3"></div>  
+            <div class="slide-shadow3"></div>
             <div class="slide-insider">
               <div class="sticker">
-                <img src="assets/img/ps-plus/sticker.webp" alt="">
+                <img src="assets/img/ps-plus/sticker.webp" alt="" />
               </div>
               <h3>PlayStation Plus Season of Play</h3>
-              <p>Join us for a full month of new PlayStation Plus content, a competition, discounts and more activities</p>
+              <p>
+                Join us for a full month of new PlayStation Plus content, a
+                competition, discounts and more activities
+              </p>
             </div>
           </div>
         </div>
@@ -337,7 +299,10 @@
             <h2>THIS MONTH</h2>
             <h2>ON PLAYSTATION</h2>
           </div>
-          <p class="z-10">Check out this month's biggest releases along with dedicated features, guides and more.</p>
+          <p class="z-10">
+            Check out this month's biggest releases along with dedicated
+            features, guides and more.
+          </p>
           <div class="feature-btn">
             <button>Find out more</button>
           </div>
@@ -346,19 +311,19 @@
         <div class="feature-card-area z-10">
           <div class="feature-card">
             <div class="fc-img">
-              <img src="assets/img/feature/img01.webp">
+              <img src="assets/img/feature/img01.webp" />
             </div>
             <p>The ultimate review of 2023</p>
           </div>
           <div class="feature-card">
             <div class="fc-img">
-              <img src="assets/img/feature/img02.webp">
+              <img src="assets/img/feature/img02.webp" />
             </div>
             <p>The best cozy games on PlayStation</p>
           </div>
           <div class="feature-card">
             <div class="fc-img">
-              <img src="assets/img/feature/img03.webp">
+              <img src="assets/img/feature/img03.webp" />
             </div>
             <p>10 games you should play first on PS5</p>
           </div>
@@ -368,16 +333,28 @@
       <section class="social-handles">
         <h3>Follow us on social media</h3>
         <div class="social-media">
-          <img src="assets/img/social/twitter.webp">
-          <img src="assets/img/social/facebook.webp">
-          <img src="assets/img/social/instagram.webp">
-          <img src="assets/img/social/youtube.webp">
+          <img src="assets/img/social/twitter.webp" />
+          <img src="assets/img/social/facebook.webp" />
+          <img src="assets/img/social/instagram.webp" />
+          <img src="assets/img/social/youtube.webp" />
         </div>
       </section>
     </div>
 
     <!-- -------------------- LOCO ------------------- -->
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+
+    <!-- ------------------Swiper JS------------------ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- ------------------- REACT SCRIPT ------------- -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script src="components/heroCards.js" type="text/jsx"></script>
+    <script src="components/itemCard.js" type="text/jsx"></script>
+    <script src="components/upcomings.js" type="text/jsx"></script>
     <script src="script.js"></script>
   </body>
 </html>
