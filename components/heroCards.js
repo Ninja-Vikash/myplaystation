@@ -12,7 +12,7 @@ function HeroCards() {
   ];
   return (
     <>
-      <section class="hero-cards">
+      <section className="hero-cards">
         {cardImages.map((img, index) => {
           return (
             <div key={index} className="option">
